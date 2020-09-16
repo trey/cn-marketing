@@ -1,0 +1,43 @@
+$logo-size: 35px;
+
+.c-site-nav {
+    background: $dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid $bw;
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+
+        &:hover { text-decoration: underline; }
+    }
+
+    .film-icon {
+        height: $logo-size;
+        width: $logo-size;
+    }
+
+    nav {
+        @media print { display: none; }
+
+        ul {
+            margin: 0;
+            font-size: 0.6rem;
+
+            @include breakpoint('S') { font-size: 0.9rem; }
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 0.5rem;
+            margin-bottom: 0;
+
+            &:first-child { margin-left: 0; }
+
+            &.feedback a { color: $gold; }
+        }
+    }
+}

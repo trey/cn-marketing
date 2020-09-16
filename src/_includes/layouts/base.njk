@@ -3,13 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{{ title }}</title>
+    <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="description" content="{{ description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
     <link rel="stylesheet" href="/css/main.css" />
 </head>
 
 <body{%- if bodyClass %} class="{{ bodyClass }}"{%- endif -%}>
-    <div class="wrapper">{{ content | safe }}</div>
+    <div class="wrapper">
+        <header class="c-site-nav">
+            <nav>
+                <ul>
+                    <li><a href="https://app.cassettenest.com/accounts/login/">Log in</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="icon">
+            <img src="/img/full-icon.svg" height="200" width="200" alt="Cassette Nest Icon" />
+        </div>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            <p>Copyright &copy; {{ page.date.getFullYear() }} <a href="https://treylabs.com">Trey Labs LLC</a>. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

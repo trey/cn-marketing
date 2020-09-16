@@ -1,0 +1,56 @@
+.c-heading {
+    margin: 1.5rem 0 3rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 { margin: 0; }
+
+    small {
+        color: $dark;
+        font-size: 0.75rem;
+        margin-left: 0.5rem;
+        background: $light;
+        padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid $medium;
+    }
+
+    &--home {
+        margin: 0;
+        margin-bottom: 1px;
+        font-size: 1rem;
+        padding: 0.8rem 1.25rem;
+        color: $light;
+        font-weight: normal;
+        background-color: $dark;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+
+        & + * { margin-top: 1.5rem; }
+    }
+
+    .action {
+        margin-left: 1.5rem;
+        flex-shrink: 0;
+
+        // A little redundant of the button + button style,
+        // but this works for button + form.
+        > * + * { margin-left: 1rem; }
+
+        form {
+            display: inline;
+            margin-bottom: 0;
+        }
+    }
+
+    a.button,
+    button {
+        &.icon { fill: $medium; }
+    }
+}

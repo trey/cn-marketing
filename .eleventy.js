@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addShortcode('responsiveImage', responsiveImage);
 
+    eleventyConfig.addPassthroughCopy('src/img');
+
     // Make 404 page work with `eleventy --serve`
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
