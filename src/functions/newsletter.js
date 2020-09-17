@@ -30,10 +30,13 @@ exports.handler = async (event, context, callback) => {
             )
         })
             .then(() => ({
-                statusCode: 200,
-
                 // Redirect to success page.
-                body: `Email ${email} hopefully added to the list.`
+                statusCode: 302,
+                headers: {
+                    Location: '/?signedup=true',
+                    'Cache-Control': 'no-cache',
+                },
+                body: JSON.stringify({})
             }))
             .catch(error => ({
                 // Still redirect to success page.
