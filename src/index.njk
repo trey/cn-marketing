@@ -17,8 +17,7 @@ bodyClass: landing
 
     <p>Submit your email address and we’ll let you know when we’re ready!</p>
 
-    <form action="https://app.cassettenest.com/newsletter" id="signup" method="post" name="signup">
-        {# {% csrf_token %} #}
+    <form action="/.netlify/functions/newsletter" method="POST">
         <div>
             <label for="id_email">Email</label>
             <input id="id_email" name="email" type="email" required />
