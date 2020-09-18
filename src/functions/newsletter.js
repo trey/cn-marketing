@@ -8,21 +8,13 @@ exports.handler = async (event, context, callback) => {
         return { statusCode: 405, body: 'Method Not Allowed' };
     }
 
+    const formData = new URLSearchParams();
     const params = querystring.parse(event.body);
     const email = params.email;
     const email2 = params.email2;
 
-    console.log('email', email);
-    console.log('email2', email2);
-    console.log('url', process.env.NEWSLETTER_URL);
-    console.log('key', `group_${process.env.GROUP}`);
-    console.log('value', process.env.GROUP);
-
-    const formData = new URLSearchParams();
-
     formData.append('email', email);
     formData.append([`group_${process.env.GROUP}`], process.env.GROUP);
-    console.log('form data', formData);
 
     if(email2 === '') {
         // Send the form to the ESP.
@@ -41,9 +33,12 @@ exports.handler = async (event, context, callback) => {
             }))
             .catch(error => ({
                 // Still redirect to success page.
-
-                statusCode: 422,
-                body: `Oops! Something went wrong. ${error}`
+                statusCode: 302,
+                headers: {
+                    Location: '/?signedup=true&error=true',
+                    'Cache-Control': 'no-cache',
+                },
+                body: JSON.stringify({})
             }));
     } else {
         // Still redirect to success page without posting the form.
