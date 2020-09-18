@@ -1,4 +1,4 @@
-// https://github.com/netlify/functions/blob/master/src/lambda/hello_slack.js
+// Honeypot
 const querystring = require('querystring');
 const fetch = require('node-fetch');
 
@@ -8,10 +8,10 @@ exports.handler = async (event, context, callback) => {
         return { statusCode: 405, body: 'Method Not Allowed' };
     }
 
-    const formData = new URLSearchParams();
     const params = querystring.parse(event.body);
     const email = params.email;
     const email2 = params.email2;
+    const formData = new URLSearchParams();
 
     formData.append('email', email);
     formData.append([`group_${process.env.GROUP}`], process.env.GROUP);
@@ -26,7 +26,7 @@ exports.handler = async (event, context, callback) => {
                 // Redirect to success page.
                 statusCode: 302,
                 headers: {
-                    Location: '/?signedup=true',
+                    Location: '/signedup',
                     'Cache-Control': 'no-cache',
                 },
                 body: JSON.stringify({})
@@ -35,7 +35,7 @@ exports.handler = async (event, context, callback) => {
                 // Still redirect to success page.
                 statusCode: 302,
                 headers: {
-                    Location: '/?signedup=true&error=true',
+                    Location: '/signedup?error=true',
                     'Cache-Control': 'no-cache',
                 },
                 body: JSON.stringify({})
@@ -45,7 +45,7 @@ exports.handler = async (event, context, callback) => {
         callback(null, {
             statusCode: 302,
             headers: {
-                Location: '/?signedup=true',
+                Location: '/signedup',
                 'Cache-Control': 'no-cache',
             },
             body: JSON.stringify({})
