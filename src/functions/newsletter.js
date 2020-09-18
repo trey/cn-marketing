@@ -18,16 +18,17 @@ exports.handler = async (event, context, callback) => {
     console.log('key', `group_${process.env.GROUP}`);
     console.log('value', process.env.GROUP);
 
+    const formData = new URLSearchParams();
+
+    formData.append('email', email);
+    formData.append([`group_${process.env.GROUP}`], process.env.GROUP);
+    console.log('form data', formData);
+
     if(email2 === '') {
         // Send the form to the ESP.
         return fetch(process.env.NEWSLETTER_URL, {
             method: 'POST',
-            body: JSON.stringify(
-                {
-                    email,
-                    [`group_${process.env.GROUP}`]: process.env.GROUP,
-                }
-            )
+            body: formData,
         })
             .then(() => ({
                 // Redirect to success page.
