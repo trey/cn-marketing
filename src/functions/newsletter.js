@@ -48,8 +48,12 @@ exports.handler = async (event, context, callback) => {
     } else {
         // Still redirect to success page without posting the form.
         callback(null, {
-            statusCode: 200,
-            body: 'Nope rope.'
+            statusCode: 302,
+            headers: {
+                Location: '/?signedup=true',
+                'Cache-Control': 'no-cache',
+            },
+            body: JSON.stringify({})
         });
     }
 };
