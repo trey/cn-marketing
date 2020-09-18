@@ -14,16 +14,20 @@
 <body{%- if bodyClass %} class="{{ bodyClass }}"{%- endif -%}>
     <div class="wrapper">
         <header class="c-site-nav">
+            {% if bodyClass != 'landing' %}
+                <div class="film-icon"><a href="/"><img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" /></a></div>
+            {% endif %}
             <nav>
                 <ul>
                     <li><a href="https://app.cassettenest.com/accounts/login/">Log in</a></li>
                 </ul>
             </nav>
-
         </header>
+        {%- if bodyClass == 'landing' -%}
         <div class="icon">
             <img src="/img/full-icon.svg" height="200" width="200" alt="Cassette Nest Icon" />
         </div>
+        {%- endif -%}
         <main>
             {{ content | safe }}
         </main>
