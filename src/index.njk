@@ -21,7 +21,10 @@ bodyClass: landing
         <div>
             <label for="id_email">Email</label>
             <input id="id_email" name="email" type="email" required />
-            <input name="email2" type="email" style="padding: 0; height: 0; width: 0; border: 0; position: absolute;" />
+            <div style="padding: 0; height: 0; width: 0; border: 0; position: absolute; overflow: hidden;">
+                <label for="email2">Email</label>
+                <input id="email2" name="email2" type="email" />
+            </div>
             <input id="form-submit-input" name="Submit" type="submit" value="Submit" />
         </div>
     </form>
