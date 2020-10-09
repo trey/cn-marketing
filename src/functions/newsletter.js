@@ -31,7 +31,7 @@ exports.handler = async (event, context, callback) => {
                 },
                 body: JSON.stringify({})
             }))
-            .catch(error => ({
+            .catch(() => ({
                 // Still redirect to success page.
                 statusCode: 302,
                 headers: {
