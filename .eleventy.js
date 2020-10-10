@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { DateTime } = require('luxon');
 const markdownIt = require('markdown-it');
 const markdownLib = markdownIt({ html: true, typographer: true });
 const md = new markdownIt();
@@ -15,6 +16,10 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('src/img');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
+
+    eleventyConfig.addFilter('midDate', dateObj => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLLL dd, yyyy');
+    });
 
     // Make 404 page work with `eleventy --serve`
     eleventyConfig.setBrowserSyncConfig({
