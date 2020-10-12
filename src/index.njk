@@ -15,7 +15,11 @@ bodyClass: landing
 
     <h2>We’re still developing…</h2>
 
-    <p>Submit your email address and we’ll let you know when we’re ready!</p>
+    <p>If you’re feeling brave, you can go ahead and <a href="https://app.cassettenest.com/register/">sign up for an account</a>.</p>
+
+    <hr />
+
+    <p>Subscribe for updates:</p>
 
     <form action="/.netlify/functions/newsletter" method="POST">
         <div>
@@ -29,5 +33,5 @@ bodyClass: landing
         </div>
     </form>
 
-    <p>You’re always welcome to <a href="https://s.trey.cc/cn-slack">join the Casssette Nest Slack</a>.</p>
+    {% include 'components/social.njk' %}
 </div>

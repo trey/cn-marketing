@@ -1,0 +1,27 @@
+.social {
+    list-style: none;
+    margin: 0;
+    margin-top: 4rem;
+    padding: 0;
+
+    li {
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+
+        &,
+        a { display: inline-block; }
+    }
+
+    svg {
+        fill: rgba(0, 0, 0, 0.8);
+        max-height: 2rem;
+        max-width: 2rem;
+    }
+
+    a:hover,
+    a:focus {
+        background: none;
+
+        svg { fill: $gold; }
+    }
+}

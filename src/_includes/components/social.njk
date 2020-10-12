@@ -1,0 +1,7 @@
+{%- from 'components/icon.njk' import icon -%}
+
+<ul class="social">
+{% for item in social -%}
+    <li><a href="{{ item.url }}">{{ icon(item.id, item.name) }}</a></li>
+{% endfor -%}
+</ul>

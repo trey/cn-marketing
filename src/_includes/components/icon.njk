@@ -1,0 +1,10 @@
+{% macro icon(id, title) %}
+<svg role="img">
+{%- if title %}
+    <title>{{ title }} icon</title>
+{%- else %}
+    <title>{{ id }} icon</title>
+{%- endif %}
+    <use href="/img/sprite.svg#{{ id }}"></use>
+</svg>
+{% endmacro %}
