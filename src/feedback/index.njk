@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Feedback / Cassette Nest
+---
+{% from 'components/form-field.njk' import formField %}
+
+<div class="raw">
+    <h1>Submit Feedback</h1>
+
+    <form name="feedback" action="/feedback/thanks/" method="POST" data-netlify="true">
+        {{ formField({
+            label: 'Email',
+            input_type: 'email',
+            id: 'email',
+            required: true
+        }) }}
+        {{ formField({
+            label: 'What’s up?',
+            input_type: 'select',
+            choices: {
+                'comment': 'I have a comment.',
+                'bug': 'I found a bug.',
+                'feature': 'I have a feature request.',
+                'film': 'I need another kind of film added.'
+            },
+            id: 'choice'
+        }) }}
+        {{ formField({
+            label: 'Details',
+            input_type: 'textarea',
+            id: 'text',
+            required: true
+        }) }}
+        <div class="action">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+{% macro formField(field) %}
+<div class="c-field {% if not field.input_type %} c-field--textarea{% else %}c-field--{{field.input_type}}{% endif %}">
+    {% if field.input_type == 'checkbox' %}
+        {% if field.help_text %}
+        <small class="c-field__help">{{ field.help_text }}</small>
+        {% endif %}
+        <label for="id_{{ field.id }}">
+            <input type="checkbox" />
+            {{ field.label }}
+        </label>
+    {% else %}
+        <label for="id_{{ field.id }}">{{ field.label }}</label>
+        {% if field.help_text and field.label != 'Username' %}
+        <small class="c-field__help">{{ field.help_text }}</small>
+        {% endif %}
+        {% if field.input_type == 'textarea' %}
+            <textarea name="{{ field.id }}" cols="40" rows="10" id="id_{{ field.id }}"{% if field.required %} required{% endif %}></textarea>
+        {% elif field.input_type == 'select' %}
+            <select name="{{ field.id }}" id="id_{{ field.id }}"{% if field.required %} required{% endif %}>
+                {% for key, value in field.choices %}
+                    <option value="{{ key }}">{{ value }}</option>
+                {% endfor %}
+            </select>
+        {% else %}
+            <input type="{{ field.input_type }}" name="{{ field.id }}" id="id_{{ field.id }}"{% if field.required %} required{% endif %} />
+        {% endif %}
+    {% endif %}
+</div>
+{% endmacro %}
