@@ -5,7 +5,7 @@
         <small class="c-field__help">{{ field.help_text }}</small>
         {% endif %}
         <label for="id_{{ field.id }}">
-            <input type="checkbox" id="id_{{ field.id }}" />
+            <input type="checkbox" name="{{ field.id }}" id="id_{{ field.id }}" />
             {{ field.label }}
         </label>
     {% elif field.input_type == 'radio' %}
