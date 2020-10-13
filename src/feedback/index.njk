@@ -8,6 +8,7 @@ title: Feedback / Cassette Nest
     <h1>Submit Feedback</h1>
 
     <form name="feedback" action="/feedback/thanks/" method="POST" data-netlify="true">
+        <input type="hidden" name="username" id="id_username" />
         {{ formField({
             label: 'Email',
             input_type: 'email',
@@ -31,8 +32,20 @@ title: Feedback / Cassette Nest
             id: 'text',
             required: true
         }) }}
+        {{ formField({
+            label: 'Add me to the mailing list.',
+            input_type: 'checkbox',
+            id: 'mailing'
+        }) }}
         <div class="action">
             <input type="submit" value="Submit" />
         </div>
     </form>
 </div>
+
+<script>
+// Pre-populate the form if we can.
+(new URL(window.location)).searchParams.forEach((x, y) => {
+    document.getElementById(`id_${y}`).value = x;
+});
+</script>
