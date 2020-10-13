@@ -17,11 +17,13 @@
             {%- if bodyClass != 'landing' %}
                 <div class="film-icon"><a href="/"><img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" /></a></div>
             {%- endif %}
+            {% if page.url != '/feedback/' and page.url != '/feedback/thanks/' %}
             <nav>
                 <ul>
                     <li><a href="https://app.cassettenest.com/accounts/login/">Log in</a></li>
                 </ul>
             </nav>
+            {% endif %}
         </header>
         {% if bodyClass == 'landing' %}
         <div class="icon">
