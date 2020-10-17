@@ -1,4 +1,9 @@
 body {
     &.landing { @import 'landing'; }
-    &.why { @import 'why'; }
+    &.logbook { @import 'logbook'; }
+    &.ready { @import 'ready'; }
+    &.roll-detail { @import 'roll-detail'; }
+    &.journal-entry { @import 'journal-entry'; }
+    &.dashboard { @import 'dashboard'; }
+    &.patterns { @import 'patterns'; }
 }

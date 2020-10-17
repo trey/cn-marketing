@@ -55,7 +55,7 @@ $divider-width: 0.2rem;
 
     // Let the slightly more sophisticated Card and Heading styles break out of
     // the .raw padding.
-    .c-heading--home,
+    .c-heading--divider,
     .c-card {
         margin-left: -$raw-padding;
         margin-right: -$raw-padding;
@@ -75,12 +75,15 @@ $divider-width: 0.2rem;
     .action { margin-top: 0; }
 }
 
+.js-link,
 .toggle-button { display: none; }
 
 html.has-js {
     .toggle { display: none; }
 
     .toggle-button { display: inline; }
+
+    .js-link { display: block; }
 }
 
 // Print

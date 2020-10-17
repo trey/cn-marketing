@@ -1,0 +1,36 @@
+.development { background: $light; }
+
+.journal-entries {
+    margin-top: 3rem;
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+        white-space: nowrap;
+
+        th.entry {
+            &-date,
+            &-frames { width: 25%; }
+        }
+
+        th,
+        td { padding: 0.5rem; }
+
+        td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @media print { white-space: normal; }
+        }
+    }
+
+    .action { margin-top: 1.5rem; }
+}
+
+.meta {
+    list-style: none;
+    padding: 0;
+
+    li + li { margin-top: 1rem; }
+}

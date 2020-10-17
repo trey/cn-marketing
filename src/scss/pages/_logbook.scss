@@ -1,0 +1,26 @@
+.bulk-status {
+    @include divider-dashed;
+    border-width: $divider-width 0;
+    margin-bottom: 2rem;
+    padding: 1.8rem 0 2rem;
+
+    p { margin-top: 0; }
+}
+
+.year-filter {
+    list-style: none;
+    padding: 0;
+
+    a { text-decoration: none; }
+
+    li {
+        margin-right: 1.5rem;
+        display: inline-block;
+        padding-bottom: 0.25rem;
+        border-bottom: 0.25rem solid transparent;
+
+        &:last-child { margin-right: 0; }
+
+        &.current { border-color: $bw; }
+    }
+}
