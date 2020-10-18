@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Cassette Nest Newsletter Archive
+---
+
+<style>
+    .post__date { color: #ccc; }
+
+    h1 { margin-bottom: 3rem; }
+
+    li + li { margin-top: 1rem; }
+</style>
+
+<div class="raw">
+    <h1>{{ title }}</h1>
+
+    {% set postslist = collections.newsletters | reverse %}
+
+    <ol class="posts" reversed>
+    {% for post in postslist %}
+        <li class="post">
+            <div class="post__url">
+                <a href="{{ post.url | url }}">{{ post.data.title }}</a><span class="post__date"> / {{ post.date | shortDate }}</span>
+            </div>
+        </li>
+    {% endfor %}
+    </ol>
+</div>

@@ -21,6 +21,10 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLLL dd, yyyy');
     });
 
+    eleventyConfig.addFilter('shortDate', dateObj => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    });
+
     // Make 404 page work with `eleventy --serve`
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
