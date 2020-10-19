@@ -7,6 +7,4 @@ Landing page / marketing site for [Cassette Nest](https://cassettenest.com).
 - `npm i`
 - `npm start`
 
-If you need to work on Netlify Functions locally, run `netlify dev`.
-
-Copyright © 2020 Trey Labs LLC. All rights reserved.
+Copyright © 2016–2020 Trey Labs LLC. All rights reserved.

@@ -21,16 +21,11 @@ bodyClass: landing
 
     <p>Subscribe for updates:</p>
 
-    <form action="/.netlify/functions/newsletter" method="POST">
-        <div>
-            <label for="id_email">Email</label>
-            <input id="id_email" name="email" type="email" required />
-            <div style="padding: 0; height: 0; width: 0; border: 0; position: absolute; overflow: hidden;">
-                <label for="email2">Email</label>
-                <input id="email2" name="email2" type="email" />
-            </div>
-            <input id="form-submit-input" name="Submit" type="submit" value="Submit" />
-        </div>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/cassettenest" method="post">
+        <label for="bd-email">Email</label>
+        <input type="email" name="email" id="bd-email" />
+        <input type="hidden" value="1" name="embed" />
+        <input type="submit" value="Subscribe" />
     </form>
 
     {% include 'components/social.njk' %}
