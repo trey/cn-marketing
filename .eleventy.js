@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('src/img');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
+    eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
     eleventyConfig.addFilter('midDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLLL dd, yyyy');

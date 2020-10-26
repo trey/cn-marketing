@@ -15,7 +15,13 @@
     <div class="wrapper">
         <header class="c-site-nav">
             {%- if bodyClass != 'landing' %}
-                <div class="film-icon"><a href="/"><img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" /></a></div>
+                <div class="film-icon">
+                    {% if page.url != '/' %}
+                        <a href="/"><img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" /></a>
+                    {% else %}
+                        <img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" />
+                    {% endif %}
+                </div>
             {%- endif %}
             {% if page.url != '/feedback/' and page.url != '/feedback/thanks/' %}
             <nav>
