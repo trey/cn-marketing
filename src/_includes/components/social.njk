@@ -2,6 +2,6 @@
 
 <ul class="social">
 {% for item in social -%}
-    <li><a href="{{ item.url }}">{{ icon(item.id, item.name) }}</a></li>
+    <li><a href="{{ item.url }}" aria-label="{{ item.name }}">{{ icon(item.id, item.name) }}</a></li>
 {% endfor -%}
 </ul>
