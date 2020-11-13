@@ -18,6 +18,15 @@
         padding-bottom: 3rem;
     }
 
+    a {
+        &:hover { background: none; }
+
+        &:focus {
+            position: relative;
+            top: 2px;
+        }
+    }
+
     form { margin-top: 2rem; }
 
     input {
