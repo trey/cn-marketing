@@ -5,13 +5,8 @@
         "url": "https://twitter.com/cassettenest"
     },
     {
-        "id": "slack",
-        "name": "Slack",
-        "url": "https://s.trey.cc/cn-slack"
-    },
-    {
-        "id": "github",
-        "name": "GitHub",
+        "id": "git",
+        "name": "Git",
         "url": "https://github.com/trey/cn-marketing"
     }
 ]
