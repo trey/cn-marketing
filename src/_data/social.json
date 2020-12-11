@@ -8,5 +8,10 @@
         "id": "git",
         "name": "Git",
         "url": "https://github.com/trey/cn-marketing"
+    },
+    {
+        "id": "netlify",
+        "name": "Blog",
+        "url": "https://treypiepmeier.com/words/tag/cassettenest/"
     }
 ]
