@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>
-        {{- renderData.title or title or metadata.title }}
-        {%- if '/changelog/' in page.url and page.url != '/changelog/' %} / Changelog{% endif %}
-        {%- if page.url != '/' %} / Cassette Nest{% else %}{{ metadata.tagline }}{% endif %}
-        {{- '' -}}
+        {%- if page.url == '/' -%}
+        {{- metadata.tagline -}}
+        {%- else -%}
+        {{- renderData.title or title or metadata.title -}}
+        {%- if '/changelog/' in page.url and page.url != '/changelog/' %} / Changelog{%- endif %} / Cassette Nest
+        {%- endif -%}
     </title>
     {% if '/changelog/' in page.url %}
     <meta name="description" content="{{ metadata.changelogDescription }}" />
