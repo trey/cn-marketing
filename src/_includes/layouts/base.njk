@@ -3,8 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="description" content="An easy and fun way to build a lifelong archive of metadata about your film photography." />
+    <title>
+        {{- renderData.title or title or metadata.title }}
+        {%- if '/changelog/' in page.url and page.url != '/changelog/' %} / Changelog{% endif %}
+        {%- if page.url != '/' %} / Cassette Nest{% else %}{{ metadata.tagline }}{% endif %}
+        {{- '' -}}
+    </title>
+    {% if '/changelog/' in page.url %}
+    <meta name="description" content="{{ metadata.changelogDescription }}" />
+    {% else %}
+    <meta name="description" content="{{ description or metadata.description }}" />
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" type="image/png" href="/img/favicon.png" />
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
@@ -12,15 +21,15 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cassettenest.com" />
-    <meta property="og:title" content="Cassette Nest — Your analog photography deserves metadata." />
-    <meta property="og:description" content="An easy and fun way to build a lifelong archive of metadata about your film photography." />
+    <meta property="og:title" content="{{ metadata.tagline }}" />
+    <meta property="og:description" content="{{ metadata.description }}" />
     <meta property="og:image" content="/img/meta-card.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://cassettenest.com" />
-    <meta property="twitter:title" content="Cassette Nest — Your analog photography deserves metadata." />
-    <meta property="twitter:description" content="An easy and fun way to build a lifelong archive of metadata about your film photography." />
+    <meta property="twitter:title" content="{{ metadata.tagline }}" />
+    <meta property="twitter:description" content="{{ metadata.description }}" />
     <meta property="twitter:image" content="/img/meta-card.png" />
 
     <link rel="stylesheet" href="/css/main.css" />
@@ -41,6 +50,11 @@
             {% if page.url != '/feedback/' and page.url != '/feedback/thanks/' %}
             <nav>
                 <ul>
+                    {% if '/changelog/' in page.url %}
+                    <li class="current"><span>Changelog</span></li>
+                    {% else %}
+                    <li><a href="/changelog/">Changelog</a></li>
+                    {% endif %}
                     <li><a href="https://app.cassettenest.com/accounts/login/">Log in</a></li>
                 </ul>
             </nav>
