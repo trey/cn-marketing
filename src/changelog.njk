@@ -42,12 +42,12 @@ pagination:
     <ol>
         <li>
         {% if pagination.href.previous %}
-            <a href="{{ pagination.href.previous }}" data-direction="backwards"><span>&lt; Newer</span></a>
+            <a href="{{ pagination.href.previous }}" data-direction="backwards"><span>&larr; Newer</span></a>
         {% endif %}
         </li>
         <li>
         {% if pagination.href.next %}
-            <a href="{{ pagination.href.next }}" data-direction="forwards"><span>Older &gt;</span></a>
+            <a href="{{ pagination.href.next }}" data-direction="forwards"><span>Older &rarr;</span></a>
         {% endif %}
         </li>
     </ol>
