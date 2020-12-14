@@ -1,9 +1,10 @@
 body {
-    &.landing { @import 'landing'; }
     &.logbook { @import 'logbook'; }
     &.ready { @import 'ready'; }
     &.roll-detail { @import 'roll-detail'; }
     &.journal-entry { @import 'journal-entry'; }
     &.dashboard { @import 'dashboard'; }
     &.patterns { @import 'patterns'; }
+    &.landing { @import 'landing'; }
+    &.error { @import 'error'; }
 }
