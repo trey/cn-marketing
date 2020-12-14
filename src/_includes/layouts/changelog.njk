@@ -4,6 +4,7 @@ permalink: "changelog/{{ page.fileSlug }}/"
 description: metadata.changelogDescription
 bodyClass: changelog
 ---
+{%- from 'components/icon.njk' import icon -%}
 
 <h1><a href="/changelog/">&larr;</a> {{ title }}</h1>
 <div class="post-date">
@@ -14,3 +15,7 @@ bodyClass: changelog
 
 {% set collection = collections.changelog %}
 {% include 'components/post-nav.njk' %}
+
+<ul class="social">
+    <li><a title="Subscribe to the RSS feed." href="/feed.xml" aria-label="RSS Feed">{{ icon('rss', 'Changelog') }}</a></li>
+</ul>
