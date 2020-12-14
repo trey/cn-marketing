@@ -3,19 +3,30 @@
     margin: 0;
     margin-top: 4rem;
     padding: 0;
+    display: flex;
 
     li {
         margin-right: 2rem;
         margin-bottom: 1rem;
 
         &,
-        a { display: inline-block; }
+        a { display: flex; }
     }
 
     svg {
         fill: rgba(0, 0, 0, 0.8);
-        max-height: 2rem;
-        max-width: 2rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    // The RSS icon is too big.
+    li.rss {
+        a { align-items: center; }
+
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
     }
 
     a:hover,

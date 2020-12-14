@@ -5,6 +5,11 @@
         "url": "https://twitter.com/cassettenest"
     },
     {
+        "id": "rss",
+        "name": "Changelog",
+        "url": "/changelog/"
+    },
+    {
         "id": "git",
         "name": "Git",
         "url": "https://github.com/trey/cn-marketing"
