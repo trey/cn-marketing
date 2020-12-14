@@ -18,10 +18,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/robots.txt');
     eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
+    // https://moment.github.io/luxon/docs/manual/parsing.html#parsing-technical-formats
+    eleventyConfig.addFilter('fullDate', dateObj => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
+    });
     eleventyConfig.addFilter('midDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLLL dd, yyyy');
     });
-
     eleventyConfig.addFilter('shortDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });

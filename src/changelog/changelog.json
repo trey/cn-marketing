@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/changelog.njk",
+  "tags": ["changelog"]
+}
