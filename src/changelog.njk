@@ -7,6 +7,7 @@ pagination:
     size: 20
     reverse: true
 ---
+{%- from 'components/icon.njk' import icon -%}
 
 <h1>Changelog</h1>
 
@@ -53,3 +54,7 @@ pagination:
     </ol>
 </nav>
 {% endif %}
+
+<ul class="social">
+    <li><a title="Subscribe to the RSS feed." href="/feed.xml" aria-label="RSS Feed">{{ icon('rss', 'Changelog') }}</a></li>
+</ul>
