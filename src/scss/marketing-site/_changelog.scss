@@ -13,9 +13,7 @@ main {
 
     .post {
         &__tags,
-        &__date {
-            font-size: 0.7em;
-        }
+        &__date { font-size: 0.7em; }
     }
 
     .post + .post { margin-top: 2rem; }
@@ -34,3 +32,5 @@ nav.post-navigation {
         padding: 0;
     }
 }
+
+code { background: $light; }
