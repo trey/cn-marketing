@@ -5,6 +5,7 @@ const markdownLib = markdownIt({ html: true, typographer: true });
 const md = new markdownIt();
 const responsiveImage = require('./src/_includes/shortcodes/responsive-image');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const typographyPlugin = require('@jamshop/eleventy-plugin-typography');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('src/scss');
@@ -20,6 +21,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
     eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(typographyPlugin);
 
     // https://moment.github.io/luxon/docs/manual/parsing.html#parsing-technical-formats
     eleventyConfig.addFilter('fullDate', dateObj => {

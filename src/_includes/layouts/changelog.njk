@@ -7,7 +7,7 @@ bodyClass: changelog
 {%- from 'components/icon.njk' import icon -%}
 
 <div class="post">
-    <h1><a href="/changelog/">&larr;</a> {{ title }}</h1>
+    <h1><a href="/changelog/">&larr;</a> {{ title | widont | safe }}</h1>
     <div class="post-date">
         <i>{{ page.date | fullDate }}</i>
     </div>
