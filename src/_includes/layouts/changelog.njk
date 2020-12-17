@@ -6,16 +6,18 @@ bodyClass: changelog
 ---
 {%- from 'components/icon.njk' import icon -%}
 
-<h1><a href="/changelog/">&larr;</a> {{ title }}</h1>
-<div class="post-date">
-    <i>{{ page.date | fullDate }}</i>
+<div class="post">
+    <h1><a href="/changelog/">&larr;</a> {{ title }}</h1>
+    <div class="post-date">
+        <i>{{ page.date | fullDate }}</i>
+    </div>
+
+    <div class="content">{{ content | safe }}</div>
+
+    {% set collection = collections.changelog %}
+    {% include 'components/post-nav.njk' %}
+
+    <ul class="social">
+        <li><a title="Subscribe to the RSS feed." href="/feed.xml" aria-label="RSS Feed">{{ icon('rss', 'Changelog') }}</a></li>
+    </ul>
 </div>
-
-<div class="content">{{ content | safe }}</div>
-
-{% set collection = collections.changelog %}
-{% include 'components/post-nav.njk' %}
-
-<ul class="social">
-    <li><a title="Subscribe to the RSS feed." href="/feed.xml" aria-label="RSS Feed">{{ icon('rss', 'Changelog') }}</a></li>
-</ul>

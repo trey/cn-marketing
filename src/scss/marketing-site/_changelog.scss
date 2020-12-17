@@ -33,4 +33,22 @@ nav.post-navigation {
     }
 }
 
-code { background: $light; }
+.post {
+    code { background: $light; }
+
+    img { border: 0.1rem solid rgba(0, 0, 0, 0.1); }
+
+    figure {
+        margin: 0;
+        padding: 1rem;
+        background: $light;
+        border-radius: 0.25rem;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    figcaption {
+        margin-top: 0.75em;
+        font-size: 0.8em;
+        color: $bw;
+    }
+}
