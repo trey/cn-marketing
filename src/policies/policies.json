@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/policies.njk",
+    "tags": ["policies"]
+}

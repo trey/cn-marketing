@@ -3,4 +3,5 @@
 @import 'illustration';
 @import 'images';
 
-body.changelog { @import '../marketing-site/changelog'; }
+body.changelog,
+body.policies { @import '../marketing-site/words'; }

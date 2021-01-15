@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+bodyClass: policies
+---
+{%- from 'components/icon.njk' import icon -%}
+
+<div class="post">
+    <h1><a href="/policies/">&larr;</a> {{ title | widont | safe }}</h1>
+    <div class="post-date">
+        <i>Last updated: {{ page.date | fullDate }}</i>
+    </div>
+
+    <div class="content">{{ content | safe }}</div>
+
+    <p class="attribution">Adapted from the <a href="https://github.com/basecamp/policies">Basecamp open-source policies</a> / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+</div>

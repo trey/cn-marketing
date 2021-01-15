@@ -1,8 +1,10 @@
 main {
-    padding: 2rem;
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+main,
+footer { padding: 2rem; }
 
 .content,
 .posts { margin-top: 3rem; }
@@ -51,4 +53,12 @@ nav.post-navigation {
         font-size: 0.8em;
         color: $bw;
     }
+}
+
+.attribution {
+    font-size: 1rem;
+    margin-top: 5rem;
+    background: $light;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }

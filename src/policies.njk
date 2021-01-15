@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Policies
+bodyClass: policies
+description: All the policies and legal stuff for Trey Labs users. We try to make all our policies as clear, fair, and readable as possible.
+---
+<h1>{{ title }}</h1>
+
+{% set postslist = collections.policies %}
+
+<ul class="posts">
+{% for post in postslist %}
+    <li class="post">
+        <div class="post__url">
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </div>
+        <div class="post__date">{{ post.date | midDate }}</div>
+    </li>
+{% endfor %}
+</ul>

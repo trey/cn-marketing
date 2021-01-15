@@ -60,7 +60,14 @@
                     {% else %}
                     <li><a href="/changelog/">Changelog</a></li>
                     {% endif %}
+                    {% if '/policies/' in page.url %}
+                    <li><span>Policies</span></li>
+                    {% else %}
+                    <li><a href="/policies/">Policies</a></li>
+                    {% endif %}
+                    {% if page.url == '/' %}
                     <li><a href="https://app.cassettenest.com/accounts/login/">Log in</a></li>
+                    {% endif %}
                 </ul>
             </nav>
             {% endif %}
