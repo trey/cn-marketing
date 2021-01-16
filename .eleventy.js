@@ -2,14 +2,7 @@ const fs = require('fs');
 const { DateTime } = require('luxon');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
-const markdownLib = markdownIt({ html: true, typographer: true }).use(
-    markdownItAnchor,
-    {
-        permalink: true,
-        permalinkSymbol: '∞',
-        permalinkBefore: true,
-    }
-);
+const markdownLib = markdownIt({ html: true, typographer: true }).use(markdownItAnchor);
 const md = new markdownIt();
 const responsiveImage = require('./src/_includes/shortcodes/responsive-image');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
