@@ -43,8 +43,39 @@ If you violate any of the terms, we may terminate your account. That’s a broad
 1. We have a goal of you being able to keep information you create our Service for perpetuity. [Your exports](https://app.cassettenest.com/settings/#export) are designed for portability and longevity. We will strive to keep this Service running for the foreseeable future. However, sometimes it becomes technically impossible to continue a feature or we redesign a part of our Services because we think it could be better or we decide to close new signups of a product. We reserve the right at any time to modify or discontinue, temporarily or permanently, any part of our Services with or without notice.
 2. Sometimes we change the pricing structure for our products. When we do that, we will give at least 30 days notice and will notify you via the email address on record. We may also post a notice about changes on our websites or the affected Services themselves.
 
+
 ## Uptime, Security, and Privacy
 
-…
+1. Your use of the Services is at your sole risk. We provide these Services on an “as is” and “as available” basis.
+2. We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other customers of the Services. Of course, we’ll reach out to the account owner before taking any action except in rare cases where the level of use may negatively impact the performance of the Service for other customers.
+3. We take many measures to protect and secure your data through backups and encryption.
+4. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that Trey Labs may process your data as described in our [Privacy Policy](../privacy/index.md) and for no other purpose.
+5. We use third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Services. In other words, we use [DigitalOcean](https://www.digitalocean.com) and [Netlify](https://www.netlify.com) for our hosting and [Stripe](https://stripe.com) for payment processing.
+
+## Copyright and Content Ownership
+
+1. All content posted on the Services must comply with U.S. copyright law.
+2. We claim no intellectual property rights over the material you provide to the Services. All materials you add remain yours.
+3. We do not pre-screen content, but reserve the right (but not the obligation) in our sole discretion to refuse or remove any content that is available via the Service.
+4. The names, look, and feel of the Services are copyright© to the Company. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from the Company. You must request permission to use the Company’s logo or any Service logos for promotional purposes. Please [email us](mailto:boss@treylabs.com) requests to use logos. We reserve the right to rescind this permission if you violate these Terms of Service.
+5. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Services, use of the Services, or access to the Services without the express written permission by the Company.
+6. You must not modify another website so as to falsely imply that it is associated with the Services or the Company.
+
+## Features and Bugs
+
+We design our Services with care, based on our own experience and the experiences of customers who share their time and feedback. However, there is no such thing as a service that pleases everybody. We make no guarantees that our Services will meet your specific requirements or expectations.
+
+We also test all of our features extensively before shipping them. As with any software, our Services inevitably have some bugs. We track the bugs reported to us and work through priority ones, especially any related to security or privacy. Not all reported bugs will get fixed and we don’t guarantee completely error-free Services.
+
+## Liability
+
+We mention liability throughout these Terms but to put it all in one section:
+
+***You expressly understand and agree that the Company shall not be liable, in law or in equity, to you or to any third party for any direct, indirect, incidental, lost profits, special, consequential, punitive or exemplary damages, including, but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if the Company has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the Services; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the Services; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third party on the service; (v) or any other matter relating to this Terms of Service or the Services, whether as a breach of contract, tort (including negligence whether active or passive), or any other theory of liability.***
+
+In other words: choosing to use our Services does mean you are making a bet on us. If the bet does not work out, that’s on you, not us. We do our darnedest to be as safe a bet as possible through careful management of the business; investments in security, infrastructure, and talent; and in general giving a damn. If you choose to use our Services, thank you for betting on us.
+
+If you have a question about any of the Terms of Service, please [contact us][feedback].
+
 
 [feedback]: https://cassettenest.com/feedback/
