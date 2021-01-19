@@ -3,6 +3,11 @@ title: Privacy Policy
 description: The privacy of your data — and it is your data, not ours! — is a big deal to us. Here’s the rundown of what we collect and why, when we access your information, and your rights.
 ---
 
+{% comment %}
+Based on:
+https://github.com/basecamp/policies/blob/41a04f2de72defac1932dafb690862033e005ffe/privacy/index.md
+{% endcomment %}
+
 The privacy of your data — and it is your data, not ours! — is a big deal to us. In this policy, we lay out: what data we collect and why; how your data is handled; and your rights to your data. We promise we never sell your data: never have, never will.
 
 This policy applies to all products built and maintained by Trey Labs.

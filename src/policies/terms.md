@@ -3,6 +3,11 @@ title: Terms of Service
 description: All the terms that you agree to when you sign up for a Trey Labs product.
 ---
 
+{% comment %}
+Based on:
+https://github.com/basecamp/policies/blob/fd18a964c3e72b4f9d985daa0596d83ea0b904c8/terms/index.md
+{% endcomment %}
+
 From everyone at [Trey Labs](https://treylabs.com) (right now, that’s just me, [Trey](https://treypiepmeier.com) 👋🏻), thank you for using our products! We build them to help you get the most out of your film photography. Because we don’t know every one of our users personally, we have to put in place some Terms of Service to help keep the ship afloat.
 
 When we say “Company”, “we”, “our”, or “us” in this document, we are referring to Trey Labs LLC.
