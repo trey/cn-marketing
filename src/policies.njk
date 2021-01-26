@@ -6,7 +6,7 @@ description: All the policies and legal stuff for Trey Labs users. We try to mak
 ---
 <h1>{{ title }}</h1>
 
-{% set postslist = collections.policies %}
+{% set postslist = collections.policies | reverse %}
 
 <ul class="posts">
 {% for post in postslist %}
