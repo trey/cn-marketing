@@ -25,14 +25,14 @@ If you violate any of the terms, we may terminate your account. That’s a broad
 ## Account Terms
 
 1. You are responsible for maintaining the security of your account and password. The Company cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.
-2. You may not use the Services for any purpose outlined in our [Use Restrictions policy](/policy/abuse/).
-3. You are responsible for all content posted and activity that occurs under your account. That includes content posted by others who either: (a) have access to your login credentials; or (b) have their own logins under your account.
+2. You may not use the Services for any purpose outlined in our [Use Restrictions policy](/policies/abuse/).
+3. You are responsible for all content posted and activity that occurs under your account. That includes content posted by others who have access to your login credentials.
 4. You must be a human. Accounts registered by “bots” or other automated methods are not permitted.
 
 ## Payment
 
 1. Billing is managed through [Stripe](https://stripe.com) and all plan management is done on their website via [the Subscription section of your settings page](https://app.cassettenest.com/settings/#subscription).
-2. _**Currently, a paid plan is only a way of supporting ongoing development of Cassette Nest--there is no limitation of the functionality of the application.** In the future, plan to offer a free trial period and then put your account in **read-only** if you don’t subscribe (or your subscription lapses or is canceled)._
+2. _**Currently, a paid plan is only a way of supporting ongoing development of Cassette Nest--there is no limitation of the functionality of the application.** In the future, we plan to offer a free trial period and then put your account in **read-only** if you don’t subscribe (or your subscription lapses or is canceled)._
 
 ## Cancellation and Termination
 
@@ -45,7 +45,7 @@ If you violate any of the terms, we may terminate your account. That’s a broad
 
 ## Modifications to the Service and Prices
 
-1. We have a goal of you being able to keep information you create our Service for perpetuity. [Your exports](https://app.cassettenest.com/settings/#export) are designed for portability and longevity. We will strive to keep this Service running for the foreseeable future. However, sometimes it becomes technically impossible to continue a feature or we redesign a part of our Services because we think it could be better or we decide to close new signups of a product. We reserve the right at any time to modify or discontinue, temporarily or permanently, any part of our Services with or without notice.
+1. We have a goal of you being able to keep information you create our Service forever. [Your exports](https://app.cassettenest.com/settings/#export) are designed for portability and longevity. We will strive to keep this Service running for the foreseeable future. However, sometimes it becomes technically impossible to continue a feature or we redesign a part of our Services because we think it could be better or we decide to close new signups of a product. We reserve the right at any time to modify or discontinue, temporarily or permanently, any part of our Services with or without notice.
 2. Sometimes we change the pricing structure for our products. When we do that, we will give at least 30 days notice and will notify you via the email address on record. We may also post a notice about changes on our websites or the affected Services themselves.
 
 ## Uptime, Security, and Privacy
@@ -53,7 +53,7 @@ If you violate any of the terms, we may terminate your account. That’s a broad
 1. Your use of the Services is at your sole risk. We provide these Services on an “as is” and “as available” basis.
 2. We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other customers of the Services. Of course, we’ll reach out to the account owner before taking any action except in rare cases where the level of use may negatively impact the performance of the Service for other customers.
 3. We take many measures to protect and secure your data through backups and encryption.
-4. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that Trey Labs may process your data as described in our [Privacy Policy](../privacy/index.md) and for no other purpose.
+4. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that Trey Labs may process your data as described in our [Privacy Policy](/policies/privacy/) and for no other purpose.
 5. We use third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Services. In other words, we use [DigitalOcean](https://www.digitalocean.com) and [Netlify](https://www.netlify.com) for our hosting and [Stripe](https://stripe.com) for payment processing.
 
 ## Copyright and Content Ownership
@@ -82,4 +82,4 @@ In other words: choosing to use our Services does mean you are making a bet on u
 If you have a question about any of the Terms of Service, please [contact us][feedback].
 
 
-[feedback]: https://cassettenest.com/feedback/
+[feedback]: /feedback/

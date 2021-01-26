@@ -27,7 +27,7 @@ While our use restrictions are comprehensive, they can’t be exhaustive — it�
 
 Please alert us at [boss@treylabs.com](mailto:boss@treylabs.com). If you’re not 100% sure if something rises to the level of our use restrictions policy, report it anyway.
 
-Please share as much as you are comfortable with about the account, the content or behavior you are reporting, and how you found it. Sending us a URL or screenshots is super helpful. If you need a secure file transfer, let us know and we will send you a link. We will not disclose your identity to anyone associated with the reported account.
+Please share as much as you are comfortable with about the account, the content or behavior you are reporting, and how you found it. Sending us a URL or screenshots is super helpful. We will not disclose your identity to anyone associated with the reported account.
 
 {% comment %}
 The following bit is from:

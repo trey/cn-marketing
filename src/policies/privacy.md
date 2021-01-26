@@ -18,7 +18,7 @@ Our guiding principle is to collect only what we need. Here’s what that means 
 
 ### Identity & access
 
-When you sign up for a Trey Labs product, we typically ask for identifying information such as your name and email address. That’s just so you can personalize your new account, and we can send you invoices, updates, or other essential information. We’ll never sell your personal info to third parties, and we won’t use your name or company in marketing statements without your permission either.
+When you sign up for a Trey Labs product, we typically ask for identifying information such as your name and email address. That’s just so you can personalize your new account, and we can send you updates or other essential information. We’ll never sell your personal info to third parties, and we won’t use your name or company in marketing statements without your permission either.
 
 ### Billing information
 
@@ -40,7 +40,7 @@ We also store any information you volunteer like surveys. Sometimes when we do c
 
 ### Information we do not collect
 
-We don’t collect any characteristics of protected classifications including age, race, gender, religion, sexual orientation, gender identity, gender expression, or physical and mental abilities or disabilities. You may provide these data voluntarily, such as if you include a pronoun preference in your email signature when writing into our Support team. We also do not collect any biometric data.
+We don’t collect any characteristics of protected classifications including age, race, gender, religion, sexual orientation, gender identity, gender expression, or physical and mental abilities or disabilities. You may provide these data voluntarily, such as if you include a pronoun preference in your email signature when writing us. We also do not collect any biometric data.
 
 ## When we access or share your information
 
@@ -65,7 +65,7 @@ Finally, if Trey Labs LLC is acquired by or merged with another company — we d
 
 ## Your rights with respect to your information
 
-At Basecamp, we apply the same data rights to all customers, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US. Trey Labs recognizes all of the rights granted in these regulations, except as limited by applicable law. These rights include:
+At Trey Labs, we apply the same data rights to all customers, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US. Trey Labs recognizes all of the rights granted in these regulations, except as limited by applicable law. These rights include:
 
 * **Right to Know.** You have the right to know what personal information is collected, used, shared or sold. We outline both the categories and specific bits of data we collect, as well as how they are used, in this privacy policy.
 * **Right of Access.** This includes your right to access the personal information we gather about you, and your right to obtain information about the sharing, storage, security and processing of that information.
@@ -80,7 +80,7 @@ At Basecamp, we apply the same data rights to all customers, regardless of their
 
 Many of these rights can be exercised by signing in and directly updating your account information.
 
-If you have questions about exercising these rights or need assistance, please contact us at [privacy@basecamp.com](mailto:boss@treylabs.com). For requests to delete personal information or know what personal information has been collected, we will first verify your identity using a combination of at least two pieces of information already collected including your user email address. If an authorized agent is corresponding on your behalf, we will first need written consent with a signature from the account holder before proceeding.
+If you have questions about exercising these rights or need assistance, please contact us at [boss@treylabs.com](mailto:boss@treylabs.com). For requests to delete personal information or know what personal information has been collected, we will first verify your identity using a combination of at least two pieces of information already collected including your user email address. If an authorized agent is corresponding on your behalf, we will first need written consent with a signature from the account holder before proceeding.
 
 If you are in the EU, you can identify your specific authority to file a complaint or find out more about GDPR, at [https://edpb.europa.eu/about-edpb/board/members_en](https://edpb.europa.eu/about-edpb/board/members_en).
 
@@ -92,7 +92,7 @@ Data are not encrypted while they live in our database (since it needs to be rea
 
 ## What happens when you delete data in your product accounts
 
-In many of our applications, we give you the option to trash data. Anything you trash on your product accounts is deleted immediately. We have some backups of our application databases, which are kept for up to 30 days. When you trash things in our applications, they are purged within 30 days from our system. Retrieving data for a single account from a backup is cost-prohibitive and unduly burdensome so there is no going back. Be careful.
+Anything you trash on your account is deleted immediately. We have some backups of our application databases, which are kept for up to 30 days. When you trash things, they are purged within 30 days from our system. Retrieving data for a single account from a backup is cost-prohibitive and unduly burdensome so there is no going back. Be careful.
 
 We also delete your data after an account is cancelled. Your data are purged within 30 days.
 
@@ -102,6 +102,6 @@ Our products and other web properties are operated in the United States. If you 
 
 ## Changes & questions
 
-We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can view a history of the changes to our policies since January 2021 [on GitHub](https://github.com/trey/cn-marketing/commits/main). Whenever we make a significant change to our policies, we will also announce them on  [our changelog](https://cassettenest.com/changelog/)..
+We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can view a history of the changes to our policies since January 2021 [on GitHub](https://github.com/trey/cn-marketing/commits/main). Whenever we make a significant change to our policies, we will also announce them on  [our changelog](https://cassettenest.com/changelog/).
 
 Have any questions, comments, or concerns about this privacy policy, your data, or your rights with respect to your information? Please get in touch by emailing us at [boss@treylabs.com](mailto:boss@treylabs.com) and we’ll be happy to answer them!
