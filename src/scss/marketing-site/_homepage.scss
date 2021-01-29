@@ -11,7 +11,7 @@ main p {
 }
 
 header.illustration {
-    padding: 2rem 0 3rem;
+    padding: 0 0 3rem;
     display: flex;
     flex-wrap: wrap;
 
@@ -30,7 +30,7 @@ header.illustration {
         width: 100%;
 
         @include breakpoint('S') {
-            width: 75%;
+            width: 70%;
         }
 
         @include breakpoint('M') {
@@ -46,11 +46,6 @@ header.illustration {
         @include breakpoint('M') {
             flex-basis: 50%;
         }
-    }
-
-    img {
-        height: auto;
-        max-width: 300px;
     }
 }
 
@@ -83,15 +78,6 @@ header.illustration {
         }
 
         li { display: inline-block; }
-
-        img {
-            max-width: 150px;
-            height: auto;
-
-            @include breakpoint('M') {
-                max-width: 250px;
-            }
-        }
 
         a {
             display: block;
