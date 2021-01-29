@@ -1,34 +1,40 @@
 ---
 layout: layouts/base.njk
+bodyClass: homepage
 ---
 
-<div class="raw">
-    <div class="illustration">
-        <img src="/img/illustration-600.jpg" alt="Cassette Nest Illustration" width="300" height="286.5" />
-    </div>
+<header class="illustration">
+    <div><h1>Your analog photography deserves&nbsp;metadata.</h1></div>
+    <div><img src="/img/illustration-600.jpg" alt="Cassette Nest Illustration" width="300" height="286.5" /></div>
+</header>
 
-    <p>An easy and fun way to build a lifelong archive of metadata about your film photography.</p>
-    <p><a href="https://cottonbureau.com/people/trey-labs">Buy a shirt!</a></p>
-    <p><a href="https://youtu.be/SeCkpV7DAlE">Watch an introductory video.</a></p>
+<p>Using Cassette Nest is an easy and fun way to build a lifelong archive of metadata about your film&nbsp;photography.</p>
 
-    <hr />
+<p class="signup"><a class="button" href="https://app.cassettenest.com/register/">Sign up!</a></p>
 
-    <h2>We’re still developing…</h2>
+<hr />
 
-    <p>If you’re feeling brave, you can go ahead and <a href="https://app.cassettenest.com/register/">sign up for an account</a>.</p>
+<div class="shirts">
+    <h2>Pick up a shirt illustrated by <a href="https://jeanwei.com">Jean Wei</a>!</h2>
 
-    <hr />
-
-    <p>Subscribe for updates:</p>
-
-    <form action="https://buttondown.email/api/emails/embed-subscribe/cassettenest" method="post">
-        <label for="bd-email">Email</label>
-        <input type="email" name="email" id="bd-email" />
-        <input type="hidden" value="1" name="embed" />
-        <div class="action">
-            <input type="submit" value="Subscribe" />
-        </div>
-    </form>
-
-    {% include 'components/social.njk' %}
+    <ul>
+        <li><a href="https://cottonbureau.com/products/cassette-nest-sticker#/6525901/tee-men-standard-tee-vintage-royal-tri-blend-s"><img src="/img/shirt-blue.png" height="250" width="250" alt="Blue T-shirt" /></a></li>
+        <li><a href="https://cottonbureau.com/products/cassette-nest-sticker#/6525917/tee-men-standard-tee-vintage-black-tri-blend-s"><img src="/img/shirt-black.png" height="250" width="250" alt="Black T-shirt" /></a></li>
+        <li><a href="https://cottonbureau.com/products/cassette-nest-monochrome#/6465372/tee-men-standard-tee-vintage-black-tri-blend-s"><img src="/img/shirt-monochrome.png" height="250" width="250" alt="Monochrome T-shirt" /></a></li>
+        <li><a href="https://cottonbureau.com/products/cassette-nest-heather#/6472719/tee-men-standard-tee-heather-white-tri-blend-s"><img src="/img/shirt-white.png" height="250" width="250" alt="White T-shirt" /></a></li>
+        <li><a href="https://cottonbureau.com/products/cassette-nest-stealth#/6465405/tee-men-standard-tee-vintage-navy-tri-blend-s"><img src="/img/shirt-stealth.png" height="250" width="250" alt="Stealth T-shirt" /></a></li>
+    </ul>
 </div>
+
+<hr />
+
+<form action="https://buttondown.email/api/emails/embed-subscribe/cassettenest" method="post">
+    <p><label for="bd-email">Sign up for infrequent email updates:</label></p>
+    <div>
+        <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
+        <input type="hidden" value="1" name="embed" />
+        <input type="submit" value="Subscribe" />
+    </div>
+</form>
+
+{% include 'components/social.njk' %}

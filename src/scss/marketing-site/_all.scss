@@ -1,7 +1,7 @@
 @import 'social';
-@import 'why';
-@import 'illustration';
 @import 'images';
 
 body.changelog,
-body.policies { @import '../marketing-site/words'; }
+body.policies { @import 'words'; }
+
+body.homepage { @import 'homepage'; }

@@ -1,0 +1,123 @@
+main,
+footer { padding: 2rem 3rem; }
+
+.wrapper > footer { margin-top: 0; }
+
+hr { margin: 4rem 0; }
+
+main p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+header.illustration {
+    padding: 2rem 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Arial Rounded MT Bold', Arial, Helvetica, sans-serif;
+        display: inline;
+        color: rgba(0, 0, 0, 0.85);
+        text-align: center;
+        padding-bottom: 1rem;
+        width: 100%;
+
+        @include breakpoint('S') {
+            width: 75%;
+        }
+
+        @include breakpoint('M') {
+            text-align: left;
+            padding-bottom: 0;
+            width: 100%;
+        }
+    }
+
+    div {
+        flex-basis: 100%;
+
+        @include breakpoint('M') {
+            flex-basis: 50%;
+        }
+    }
+
+    img {
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+.signup {
+    margin-top: 3rem;
+    text-align: center;
+
+    .button {
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        padding: 0.5rem 1.5rem 0.75rem;
+    }
+}
+
+.shirts {
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        width: 50%;
+        margin: 2rem auto 0;
+
+        @include breakpoint('M') {
+            width: 90%;
+        }
+
+        li { display: inline-block; }
+
+        img {
+            max-width: 150px;
+            height: auto;
+
+            @include breakpoint('M') {
+                max-width: 250px;
+            }
+        }
+
+        a {
+            display: block;
+            padding: 1rem 0.5rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
+form {
+    display: inline-block;
+    background: $light;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    p { margin: 0; }
+
+    > div > * { margin-top: 1rem; }
+
+    input[type=email] {
+        margin-right: 0;
+        width: 100%;
+
+        @include breakpoint('S') {
+            margin-right: 0.5rem;
+            width: auto;
+        }
+    }
+}
