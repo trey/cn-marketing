@@ -10,18 +10,13 @@ const typographyPlugin = require('@jamshop/eleventy-plugin-typography');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('src/scss');
-
     eleventyConfig.setLibrary('md', markdownLib);
-
     eleventyConfig.addFilter('markdown', value => md.renderInline(value));
-
     eleventyConfig.addShortcode('responsiveImage', responsiveImage);
-
     eleventyConfig.addPassthroughCopy('src/img');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
     eleventyConfig.addPassthroughCopy('src/favicon.ico');
     eleventyConfig.addPassthroughCopy('_redirects');
-
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(typographyPlugin);
 
