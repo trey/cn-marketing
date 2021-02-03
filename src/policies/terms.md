@@ -1,6 +1,7 @@
 ---
 title: Terms of Service
 description: All the terms that you agree to when you sign up for a Trey Labs product.
+date: 2021-01-26
 ---
 
 {% comment %}

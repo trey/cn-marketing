@@ -1,6 +1,7 @@
 ---
 title: Use Restrictions
 description: It is not okay to use Trey Labs products for these restricted purposes.
+date: 2021-01-26
 ---
 
 {% comment %}
