@@ -10,6 +10,9 @@ bodyClass: changelog
     <h1><a href="/changelog/">&larr;</a> {{ title | widont | safe }}</h1>
     <div class="post-date">
         <i>{{ page.date | fullDate }}</i>
+        {% if published %}
+            <br /><span class="subdued">(Entry published {{ published | midDate }})</span>
+        {% endif %}
     </div>
 
     <div class="content">{{ content | safe }}</div>
