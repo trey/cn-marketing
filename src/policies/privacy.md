@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 description: The privacy of your data — and it is your data, not ours! — is a big deal to us. Here’s the rundown of what we collect and why, when we access your information, and your rights.
-date: 2021-01-26
+date: 2021-03-02
 ---
 
 {% comment %}
@@ -23,7 +23,7 @@ When you sign up for a Trey Labs product, we typically ask for identifying infor
 
 ### Billing information
 
-When you pay for a Trey Labs product, all payment information happens with our payment processing service, [Stripe](https://stripe.com). Your credit card is entered directly on Stripe’s website and doesn’t ever go through our servers. We store a records of your unique Stripe [customer](https://stripe.com/docs/api/customers) ID and [subscription](https://stripe.com/docs/api/subscriptions/object) ID in order to determine which plan you’re subscribed to and its status.
+When you pay for a Trey Labs product, you work directly with our payment processing service, [Paddle](https://paddle.com). Your credit card number never goes through our servers. We store your unique Paddle ID and some subscription information in order to determine which plan you’re subscribed to and its status.
 
 ### Website interactions
 

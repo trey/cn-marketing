@@ -1,7 +1,7 @@
 ---
 title: Terms of Service
 description: All the terms that you agree to when you sign up for a Trey Labs product.
-date: 2021-01-26
+date: 2021-03-02
 ---
 
 {% comment %}
@@ -32,7 +32,7 @@ If you violate any of the terms, we may terminate your account. That’s a broad
 
 ## Payment
 
-1. Billing is managed through [Stripe](https://stripe.com) and all plan management is done on their website via [the Subscription section of your settings page](https://app.cassettenest.com/settings/#subscription).
+1. Billing is managed through [Paddle](https://paddle.com) and all plan management can be done via [the Subscription section of your settings page](https://app.cassettenest.com/settings/#subscription).
 2. _**Currently, a paid plan is only a way of supporting ongoing development of Cassette Nest--there is no limitation of the functionality of the application.** In the future, we plan to offer a free trial period and then put your account in **read-only** if you don’t subscribe (or your subscription lapses or is canceled)._
 
 ## Cancellation and Termination
@@ -55,7 +55,7 @@ If you violate any of the terms, we may terminate your account. That’s a broad
 2. We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other customers of the Services. Of course, we’ll reach out to the account owner before taking any action except in rare cases where the level of use may negatively impact the performance of the Service for other customers.
 3. We take many measures to protect and secure your data through backups and encryption.
 4. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that Trey Labs may process your data as described in our [Privacy Policy](/policies/privacy/) and for no other purpose.
-5. We use third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Services. In other words, we use [DigitalOcean](https://www.digitalocean.com) and [Netlify](https://www.netlify.com) for our hosting and [Stripe](https://stripe.com) for payment processing.
+5. We use third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Services. In other words, we use [DigitalOcean](https://www.digitalocean.com) and [Netlify](https://www.netlify.com) for our hosting and [Paddle](https://paddle.com) for payment processing.
 
 ## Copyright and Content Ownership
 
