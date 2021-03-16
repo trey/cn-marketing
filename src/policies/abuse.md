@@ -1,7 +1,7 @@
 ---
 title: Use Restrictions
 description: It is not okay to use Trey Labs products for these restricted purposes.
-date: 2021-01-26
+date: 2021-03-16
 ---
 
 {% comment %}
@@ -15,6 +15,8 @@ We recognize that however good the maker’s intentions, technology can amplify 
 
 * **Violence, or threats thereof**: If an activity qualifies as violent crime in the United States or where you live, you may not use Trey Labs products to plan, perpetrate, or threaten that activity.
 * **Child exploitation, sexualization, or abuse**: We don’t tolerate any activities that create, disseminate, or otherwise cause child abuse. Keep away and stop. Just stop.
+* **Hate speech**: You cannot use our products to advocate for the extermination, domination, or oppression of people.
+* **Harassment**: Intimidating or targeting people or groups through repeated communication, including using racial slurs or dehumanizing language, is not welcome at Trey Labs.
 * **Doxing**: If you are using Trey Labs products to share other peoples’ private personal information for the purposes of harassment, we don’t want anything to do with you.
 * **Malware or spyware**: Code for good, not evil. If you are using our products to make or distribute anything that qualifies as malware or spyware — including remote user surveillance — begone.
 * **Phishing or otherwise attempting fraud**: It is not okay to lie about who you are or who you affiliate with to steal from, extort, or otherwise harm others.
