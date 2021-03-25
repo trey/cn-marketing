@@ -1,17 +1,13 @@
 ---
 layout: layouts/base.njk
-title: Changelog
-bodyClass: changelog
+title: Documentation
+bodyClass: documentation
 pagination:
-    data: collections.changelog
+    data: collections.documentation
     size: 20
-    reverse: true
 ---
-{%- from 'components/icon.njk' import icon -%}
 
 <h1>{{ title }}</h1>
-
-<p>The big picture of what’s going on in the world of your favorite analog photography tracking software.</p>
 
 <ul class="posts">
 {% for post in pagination.items %}
@@ -28,7 +24,7 @@ pagination:
         <div class="post__date">{{ post.date | midDate }}</div>
         <div class="post__tags">
             {% for tag in post.data.tags %}
-                {%- if tag != "changelog" -%}
+                {%- if tag != "documentation" -%}
                     {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
                     <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
                 {%- endif -%}
@@ -54,7 +50,3 @@ pagination:
     </ol>
 </nav>
 {% endif %}
-
-<ul class="social">
-    <li><a title="Subscribe to the RSS feed." href="/feed.xml" aria-label="RSS Feed">{{ icon('rss', 'Changelog') }}</a></li>
-</ul>
