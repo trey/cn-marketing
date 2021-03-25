@@ -13,47 +13,9 @@ pagination:
 
 <p>The big picture of what’s going on in the world of your favorite analog photography tracking software.</p>
 
-<ul class="posts">
-{% for post in pagination.items %}
-    <li class="post">
-        <div class="post__url">
-            <a href="{{ post.url | url }}" class="postlist-link">
-                {% if post.data.title %}
-                    {{ post.data.title }}
-                {% else %}
-                    <code>{{ post.url }}</code>
-                {% endif %}
-            </a>
-        </div>
-        <div class="post__date">{{ post.date | midDate }}</div>
-        <div class="post__tags">
-            {% for tag in post.data.tags %}
-                {%- if tag != "changelog" -%}
-                    {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
-                    <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-                {%- endif -%}
-            {% endfor %}
-        </div>
-    </li>
-{% endfor %}
-</ul>
+{% include 'components/post-list.njk' %}
 
-{% if pagination.href.previous or pagination.href.next %}
-<nav class="post-pagination">
-    <ol>
-        <li>
-        {% if pagination.href.previous %}
-            <a href="{{ pagination.href.previous }}" data-direction="backwards"><span>&larr; Newer</span></a>
-        {% endif %}
-        </li>
-        <li>
-        {% if pagination.href.next %}
-            <a href="{{ pagination.href.next }}" data-direction="forwards"><span>Older &rarr;</span></a>
-        {% endif %}
-        </li>
-    </ol>
-</nav>
-{% endif %}
+{% include 'components/post-list-nav.njk' %}
 
 <ul class="social">
     <li><a title="Subscribe to the RSS feed." href="/feed.xml" aria-label="RSS Feed">{{ icon('rss', 'Changelog') }}</a></li>
