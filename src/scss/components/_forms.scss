@@ -17,7 +17,12 @@ form {
 
     .c-card & { margin: auto 1.2rem; }
 
-    .action { margin-top: 1rem; }
+    .action {
+        margin-top: 1rem;
+
+        input[type=submit] + a,
+        button + a { margin-left: 1rem; }
+    }
 }
 
 fieldset {
@@ -44,7 +49,10 @@ textarea { -webkit-appearance: none; }
 input:not([type=checkbox]):not([type=submit]),
 textarea { @include input-style; }
 
-textarea { width: 100%; }
+textarea {
+    width: 100%;
+    resize: vertical;
+}
 
 input,
 input[type=submit],
@@ -63,3 +71,19 @@ legend {
 input[type=number] { width: 5em; }
 
 select:focus { outline: 5px solid $gold; }
+
+.has-js .markdown-toolbar.js-required {
+    display: flex;
+    background: $light;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    small { text-align: right; }
+
+    .button + .button {
+        margin-left: 0.5rem;
+
+        @include breakpoint('XS') { margin-left: 1rem; }
+    }
+}
