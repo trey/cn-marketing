@@ -17,7 +17,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-img": "^0.8.2",
+    "@11ty/eleventy-img": "^0.3.0",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eslint": "^7.23.0",

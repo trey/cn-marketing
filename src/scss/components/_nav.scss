@@ -38,12 +38,19 @@ $logo-size: 35px;
             margin-bottom: 0;
 
             // Currently selected item.
-            span { color: $bw; }
+            span,
+            &.current a { color: $bw; }
 
             &:first-child { margin-left: 0; }
 
             &.admin a,
             &.feedback a { color: $gold; }
+
+            &.current a {
+                text-decoration: underline;
+
+                &:hover { color: $medium; }
+            }
         }
     }
 }

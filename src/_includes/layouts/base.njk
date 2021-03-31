@@ -43,40 +43,15 @@
 <body{%- if bodyClass %} class="{{ bodyClass }}"{%- endif -%}>
     <div class="wrapper">
         <header class="c-site-nav">
-            {%- if bodyClass != 'landing' %}
-                <div class="film-icon">
-                    {% if page.url != '/' %}
-                        <a href="/"><img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" /></a>
-                    {% else %}
-                        <img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" />
-                    {% endif %}
-                </div>
-            {%- endif %}
-            {% if page.url != '/feedback/' and page.url != '/feedback/thanks/' %}
-            <nav>
-                <ul>
-                    {% if '/changelog/' in page.url %}
-                    <li class="current"><span>Changelog</span></li>
-                    {% else %}
-                    <li><a href="/changelog/">Changelog</a></li>
-                    {% endif %}
-                    {% if '/policies/' in page.url %}
-                    <li><span>Policies</span></li>
-                    {% else %}
-                    <li><a href="/policies/">Policies</a></li>
-                    {% endif %}
-                    {% if page.url == '/' %}
-                    <li><a href="https://app.cassettenest.com/accounts/login/">Log in</a></li>
-                    {% endif %}
-                </ul>
-            </nav>
-            {% endif %}
+            <div class="film-icon">
+                {% if page.url != '/' %}
+                    <a href="/"><img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" /></a>
+                {% else %}
+                    <img src="/img/icon.svg" height="35" width="35" alt="Cassette Nest Icon" />
+                {% endif %}
+            </div>
+            {% include 'components/main-nav.njk' %}
         </header>
-        {% if bodyClass == 'landing' %}
-        <div class="icon">
-            <a href="/"><img src="/img/icon.svg" height="100" width="100" alt="Cassette Nest Icon" /></a>
-        </div>
-        {% endif %}
         <main>
             {{ content | safe }}
         </main>

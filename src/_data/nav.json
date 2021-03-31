@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Dashboard",
+        "url": "https://app.cassettenest.com"
+    },
+    {
+        "name": "Changelog",
+        "url": "/changelog/"
+    },
+    {
+        "name": "Policies",
+        "url": "/policies/"
+    },
+    {
+        "name": "Feedback",
+        "url": "/feedback/",
+        "class": "feedback"
+    }
+]
