@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 description: The privacy of your data — and it is your data, not ours! — is a big deal to us. Here’s the rundown of what we collect and why, when we access your information, and your rights.
-date: 2021-03-06
+date: 2021-04-28
 ---
 
 {% comment %}
@@ -27,7 +27,7 @@ When you pay for a Trey Labs product, you work directly with our payment process
 
 ### Website interactions
 
-When you browse our marketing sites or applications, your browser automatically shares certain information such as which operating system and browser version you are using. We track that information (except on applications that require authentication after you log in), along with the pages you are visiting and which website referred you for statistical purposes like conversion rates and to test new designs. We use [Plausible Analytics](https://plausible.io) for this tracking. One of the reasons we like to use them is because they’re privacy-focused and [don’t collect any of your personal data](https://plausible.io/privacy-focused-web-analytics#no-personal-data-is-collected).
+When you browse our marketing sites or applications, your browser automatically shares certain information such as which operating system and browser version you are using. We track that information (except, in applications that require authentication, after you log in), along with the pages you are visiting and which website referred you for statistical purposes like conversion rates and to test new designs. We use [Plausible Analytics](https://plausible.io) for this tracking. One of the reasons we like to use them is because they’re privacy-focused and [don’t collect any of your personal data](https://plausible.io/privacy-focused-web-analytics#no-personal-data-is-collected).
 
 ### Cookies and Do Not Track
 
