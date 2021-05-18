@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+title: Documentation
+bodyClass: documentation
+pagination:
+    data: collections.documentation
+    size: 20
+---
+
+<h1>{{ title }}</h1>
+
+{% include 'components/post-list.njk' %}
+
+{% include 'components/post-list-nav.njk' %}

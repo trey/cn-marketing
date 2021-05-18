@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+permalink: "documentation/{{ page.fileSlug }}/"
+description: metadata.documentationDescription
+bodyClass: documentation
+---
+
+<div class="post">
+    <h1><a href="/documentation/">&larr;</a> {{ title | widont | safe }}</h1>
+    <div class="post-date">
+        <i>{{ page.date | fullDate }}</i>
+        {% if published %}
+            <br /><span class="subdued">(Last updated {{ published | midDate }})</span>
+        {% endif %}
+    </div>
+
+    <div class="content">{{ content | safe }}</div>
+
+    {% set collection = collections.documentation %}
+    {% include 'components/post-nav.njk' %}
+</div>

@@ -1,0 +1,24 @@
+<ul class="posts">
+{% for post in pagination.items %}
+    <li class="post">
+        <div class="post__url">
+            <a href="{{ post.url | url }}" class="postlist-link">
+                {% if post.data.title %}
+                    {{ post.data.title }}
+                {% else %}
+                    <code>{{ post.url }}</code>
+                {% endif %}
+            </a>
+        </div>
+        <div class="post__date">{{ post.date | midDate }}</div>
+        <div class="post__tags">
+            {% for tag in post.data.tags %}
+                {%- if tag != "changelog" and tag != "documentation" -%}
+                    {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
+                    <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+                {%- endif -%}
+            {% endfor %}
+        </div>
+    </li>
+{% endfor %}
+</ul>
