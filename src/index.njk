@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 bodyClass: homepage
 ---
+{% set posts = collections.changelog | head(-1) %}
 
 <header class="illustration">
     <div><h1>Your analog photography deserves metadata.</h1></div>
@@ -14,6 +15,10 @@ bodyClass: homepage
     <a class="button" href="https://app.cassettenest.com/register/">Sign up!</a>
     <span>or</span> <a href="https://app.cassettenest.com">Log in</a>
 </p>
+
+<hr />
+
+<p>The latest update: <a href="{{ posts[0].url }}">{{ posts[0].data.title }}</a></p>
 
 <hr />
 
