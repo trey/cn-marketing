@@ -18,7 +18,7 @@ bodyClass: homepage
 
 <hr />
 
-<p>The latest update: <a href="{{ posts[0].url }}">{{ posts[0].data.title }}</a></p>
+<p>The latest update <span class="subdued">({{ posts[0].data.date | midDate }})</span>: <a href="{{ posts[0].url }}">{{ posts[0].data.title }}</a></p>
 
 <hr />
 
