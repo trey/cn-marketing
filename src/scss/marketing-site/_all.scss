@@ -1,7 +1,9 @@
 @import 'social';
 @import 'images';
+@import 'signup';
 
 body.changelog,
-body.policies { @import 'words'; }
+body.policies,
+body.why { @import 'words'; }
 
 body.homepage { @import 'homepage'; }
