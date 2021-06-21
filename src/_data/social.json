@@ -3,5 +3,10 @@
         "id": "twitter",
         "name": "Twitter",
         "url": "https://twitter.com/cassettenest"
+    },
+    {
+        "id": "slack",
+        "name": "Slack",
+        "url": "https://s.trey.cc/cn-slack"
     }
 ]
