@@ -21,7 +21,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eslint": "^7.29.0",
-    "markdown-it-anchor": "^8.0.1",
+    "markdown-it-anchor": "^8.0.3",
     "npm-run-all": "^4.1.5",
     "sass": "^1.35.1",
     "stylelint-config-standard": "^22.0.0"
