@@ -5,7 +5,7 @@ module.exports = async (src, alt, title, width, height) => {
         throw new Error(`Missing alt on responsiveImage from: ${src}`);
     }
     const options = {
-        inputDir: 'src/img/',
+        inputDir: 'src/img',
         outputDir: 'public/img/',
         urlPath: '/img/',
         widths: [800, 1600, 2200, null],
